@@ -1,0 +1,1 @@
+Partition the supplied synthetic consumer profiles by daily consumption shape into exactly k nonempty clusters. Profiles are already z-normalized; use only the supplied profiles. Output {"assignments":{consumer_ID:integer cluster label}} with every supplied consumer ID exactly once, labels 0 through k-1. Cluster label order is arbitrary.

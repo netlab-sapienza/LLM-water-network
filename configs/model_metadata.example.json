@@ -1,0 +1,18 @@
+{
+  "display_name": null,
+  "family": null,
+  "parameter_count": null,
+  "revision": "UNKNOWN",
+  "quantization": "UNKNOWN",
+  "backend": "llama.cpp via Unsloth Studio (operator declaration; verify)",
+  "backend_version": "UNKNOWN",
+  "chat_template": "UNKNOWN",
+  "tokenizer_revision": "UNKNOWN",
+  "native_context_tokens": null,
+  "reasoning_mode": "UNKNOWN",
+  "reasoning_effort": null,
+  "effective_server_settings": null,
+  "model_file_sha256": null,
+  "device_notes": "UNKNOWN",
+  "server_policy": {"tool_repair": "UNKNOWN", "server_tools": "UNKNOWN", "hidden_retries": "UNKNOWN"}
+}

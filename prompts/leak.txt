@@ -1,0 +1,1 @@
+Decide whether a leak is ACTIVE at the last observed hour. Historical nominal pressures and nominal zone leak signatures are imperfect model predictions, not ground truth. Use only past and present observations. Output {"alarm":boolean,"score":number in [0,1],"ranking":[up to 3 unique zone IDs]}. If alarm is false ranking must be []. Zones group physical junction leak locations.

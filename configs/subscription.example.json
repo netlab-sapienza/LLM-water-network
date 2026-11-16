@@ -1,0 +1,13 @@
+{
+  "provider_scope": "subscription",
+  "mode": "direct",
+  "label": "CHANGE-product-model-reasoning-budget-v1",
+  "model": "CHANGE-exact-displayed-model",
+  "platform": "CHANGE-product-and-client-version",
+  "reasoning_mode": "UNKNOWN",
+  "generation": {"temperature": null, "seed": null, "max_output_tokens": null},
+  "effective_generation_verified": false,
+  "system_role_delivery": "pasted-text-in-chat-GUI",
+  "operator_declaration": "Fresh chat per decision, tools off, first answer copied verbatim; no test in project conversation",
+  "comparison_track": "supplementary-product-level"
+}

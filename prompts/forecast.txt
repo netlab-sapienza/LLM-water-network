@@ -1,0 +1,1 @@
+Forecast the next 24 hourly intended aggregate consumer demands, in L/s, from the 168 hourly past values. This is synthetic consumer demand, not inlet flow or delivered PDD demand. Output {"forecast_L_s":[24 finite nonnegative numbers]}.

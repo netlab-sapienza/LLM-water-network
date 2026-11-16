@@ -1,0 +1,16 @@
+{
+  "label": "DISCOVER_ON_SERVER",
+  "provider_scope": "local",
+  "provider_display_name": "Unsloth Lab",
+  "base_url": "http://127.0.0.1:62888/v1",
+  "model": "DISCOVER_ON_SERVER",
+  "context_limit_tokens": 32768,
+  "mode": "direct",
+  "generation": {"temperature": 0, "max_tokens": 2048},
+  "timeout_s": 180,
+  "max_tool_calls": 1,
+  "api_key_env": "WATERBENCH_API_KEY",
+  "backend": "UNKNOWN",
+  "device_notes": "UNKNOWN: record device allocation, cold/warm state and contention",
+  "server_policy": {"tool_repair": "UNKNOWN", "server_tools": "not requested; backend policy unverified", "hidden_retries": "UNKNOWN"}
+}

@@ -1,0 +1,1 @@
+{"training_seed":20261002,"trees":100,"boosting_iterations":100,"svm_c":1.0,"lasso_alpha":0.001,"msm_cost":1.0,"selection_version":"established-baselines-v040","ensemble_weights":"fixed-equal"}

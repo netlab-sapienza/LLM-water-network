@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper. Publication venue and DOI will be added when available."
+type: software
+title: "WaterBench: Experts Under Pressure"
+authors:
+  - family-names: Casalbore
+    given-names: Marco
+  - family-names: Spadaccino
+    given-names: Pietro
+  - family-names: Nakazato
+    given-names: Jin
+  - family-names: Panella
+    given-names: Massimo
+  - family-names: Melazzi
+    given-names: Nicola B.
+  - family-names: Cuomo
+    given-names: Francesca
+repository-code: "https://github.com/netlab-sapienza/LLM-water-network"
+preferred-citation:
+  type: article
+  title: "Experts Under Pressure: Benchmarking LLMs versus Engineered Water-Network Management Models"
+  authors:
+    - family-names: Casalbore
+      given-names: Marco
+    - family-names: Spadaccino
+      given-names: Pietro
+    - family-names: Nakazato
+      given-names: Jin
+    - family-names: Panella
+      given-names: Massimo
+    - family-names: Melazzi
+      given-names: Nicola B.
+    - family-names: Cuomo
+      given-names: Francesca

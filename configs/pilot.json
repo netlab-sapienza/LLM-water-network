@@ -1,0 +1,1 @@
+{"stage":"pilot","seed":20261003,"networks":["grid","ctown","ltown"],"counts":{"train":12,"validation":8,"test":8},"sensor_count":8,"conditions":["nominal","stress"],"pressure_noise_m":{"nominal":0.05,"stress":0.2},"leak_fraction":[0.05,0.2],"signature_fraction":0.1,"decision_hours":[8,12,16,20,23]}

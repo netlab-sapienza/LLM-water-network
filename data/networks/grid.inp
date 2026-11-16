@@ -1,0 +1,164 @@
+[TITLE]
+
+[JUNCTIONS]
+;ID                      Elevation       Demand Pattern                 
+ J0_0                               5               1                            ;
+ J0_1                               5               1                            ;
+ J0_2                               5               1                            ;
+ J0_3                               5               1                            ;
+ J1_0                               6               1                            ;
+ J1_1                               6               1                            ;
+ J1_2                               6               1                            ;
+ J1_3                               6               1                            ;
+ J2_0                               7               1                            ;
+ J2_1                               7               1                            ;
+ J2_2                               7               1                            ;
+ J2_3                               7               1                            ;
+ J3_0                               8               1                            ;
+ J3_1                               8               1                            ;
+ J3_2                               8               1                            ;
+ J3_3                               8               1                            ;
+
+[RESERVOIRS]
+;ID                                   Head                  Pattern
+ R                                 55                            ;
+
+[TANKS]
+;ID                              Elevation           Init Level            Min Level            Max Level             Diameter           Min Volume Volume Curve         Overflow            
+
+[PIPES]
+;ID                   Node1                Node2                              Length             Diameter            Roughness           Minor Loss               Status
+ supply               R                    J0_0                             100             300             120               0                 Open   ;
+ P0_0_1_0             J0_0                 J1_0                             100             150             120               0                 Open   ;
+ P0_0_0_1             J0_0                 J0_1                             100             150             120               0                 Open   ;
+ P0_1_1_1             J0_1                 J1_1                             100             150             120               0                 Open   ;
+ P0_1_0_2             J0_1                 J0_2                             100             150             120               0                 Open   ;
+ P0_2_1_2             J0_2                 J1_2                             100             150             120               0                 Open   ;
+ P0_2_0_3             J0_2                 J0_3                             100             150             120               0                 Open   ;
+ P0_3_1_3             J0_3                 J1_3                             100             150             120               0                 Open   ;
+ P1_0_2_0             J1_0                 J2_0                             100             150             120               0                 Open   ;
+ P1_0_1_1             J1_0                 J1_1                             100             150             120               0                 Open   ;
+ P1_1_2_1             J1_1                 J2_1                             100             150             120               0                 Open   ;
+ P1_1_1_2             J1_1                 J1_2                             100             150             120               0                 Open   ;
+ P1_2_2_2             J1_2                 J2_2                             100             150             120               0                 Open   ;
+ P1_2_1_3             J1_2                 J1_3                             100             150             120               0                 Open   ;
+ P1_3_2_3             J1_3                 J2_3                             100             150             120               0                 Open   ;
+ P2_0_3_0             J2_0                 J3_0                             100             150             120               0                 Open   ;
+ P2_0_2_1             J2_0                 J2_1                             100             150             120               0                 Open   ;
+ P2_1_3_1             J2_1                 J3_1                             100             150             120               0                 Open   ;
+ P2_1_2_2             J2_1                 J2_2                             100             150             120               0                 Open   ;
+ P2_2_3_2             J2_2                 J3_2                             100             150             120               0                 Open   ;
+ P2_2_2_3             J2_2                 J2_3                             100             150             120               0                 Open   ;
+ P2_3_3_3             J2_3                 J3_3                             100             150             120               0                 Open   ;
+ P3_0_3_1             J3_0                 J3_1                             100             150             120               0                 Open   ;
+ P3_1_3_2             J3_1                 J3_2                             100             150             120               0                 Open   ;
+ P3_2_3_3             J3_2                 J3_3                             100             150             120               0                 Open   ;
+
+[PUMPS]
+;ID                   Node1                Node2                Properties          
+
+[VALVES]
+;ID                   Node1                Node2                            Diameter Type              Setting           Minor Loss
+
+[TAGS]
+;type      name       tag       
+
+[DEMANDS]
+;ID        Demand     Pattern   
+
+[STATUS]
+;ID        Setting   
+
+[PATTERNS]
+;ID        Multipliers
+
+[CURVES]
+;ID         X-Value      Y-Value     
+
+[CONTROLS]
+
+[RULES]
+
+[ENERGY]
+GLOBAL PRICE           0.0000
+
+[EMITTERS]
+;ID        Flow coefficient
+
+[QUALITY]
+
+[SOURCES]
+;Node      Type       Quality    Pattern   
+
+[REACTIONS]
+;Type           Pipe/Tank               Coefficient
+
+ ORDER BULK 1
+ ORDER TANK 1
+ ORDER WALL 1
+ GLOBAL BULK 0.0000    
+ GLOBAL WALL 0.0000    
+
+[MIXING]
+;Tank ID             Model Fraction
+
+[TIMES]
+DURATION             00:00:00
+HYDRAULIC TIMESTEP   01:00:00
+QUALITY TIMESTEP     00:06:00
+PATTERN TIMESTEP     01:00:00
+PATTERN START        00:00:00
+REPORT TIMESTEP      01:00:00
+REPORT START         00:00:00
+START CLOCKTIME      00:00:00 AM
+RULE TIMESTEP        00:06:00
+STATISTIC            NONE      
+
+[REPORT]
+
+[OPTIONS]
+UNITS                LPS                 
+HEADLOSS             H-W                 
+SPECIFIC GRAVITY     1
+VISCOSITY            1
+TRIALS               200
+ACCURACY             0.001
+CHECKFREQ            2
+MAXCHECK             10
+UNBALANCED           STOP                
+PATTERN              1                   
+DEMAND MULTIPLIER    1
+EMITTER EXPONENT     0.5
+QUALITY              NONE                
+DIFFUSIVITY          1
+TOLERANCE            0.01
+
+[COORDINATES]
+;Node      X-Coord    Y-Coord   
+J0_0                0.000000000          0.000000000
+J0_1              100.000000000          0.000000000
+J0_2              200.000000000          0.000000000
+J0_3              300.000000000          0.000000000
+J1_0                0.000000000        100.000000000
+J1_1              100.000000000        100.000000000
+J1_2              200.000000000        100.000000000
+J1_3              300.000000000        100.000000000
+J2_0                0.000000000        200.000000000
+J2_1              100.000000000        200.000000000
+J2_2              200.000000000        200.000000000
+J2_3              300.000000000        200.000000000
+J3_0                0.000000000        300.000000000
+J3_1              100.000000000        300.000000000
+J3_2              200.000000000        300.000000000
+J3_3              300.000000000        300.000000000
+R                -100.000000000          0.000000000
+
+[VERTICES]
+;Link      X-Coord    Y-Coord   
+
+[LABELS]
+
+[BACKDROP]
+UNITS    NONE
+
+[END]

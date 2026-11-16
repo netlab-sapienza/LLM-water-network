@@ -1,0 +1,19 @@
+{
+  "version": "established-baselines-v040",
+  "claim": "Established specialist baselines adapted to common observations; not universal SOTA winners",
+  "implementation": "waterbench/methods.py and waterbench/clustering.py; original project code and installed sklearn primitives",
+  "configuration": "configs/baselines.json",
+  "selection": "Fixed before final test; strongest implemented specialist may be selected on validation only",
+  "methods": {
+    "physics-residual": {"task":"leak", "fit_splits":["validation"], "family":"hydraulic residual/signature matching", "calibration":"nominal scores 95th percentile"},
+    "extra-trees": {"task":"leak", "fit_splits":["train"], "family":"extremely randomized trees"},
+    "residual-svm": {"task":"leak", "fit_splits":["train"], "family":"standardized RBF SVC", "source":"https://boa.unimib.it/bitstream/10281/59603/1/Candelieri-2014-Procedia%20Engineer-VoR.pdf", "adaptation":"causal pressure residual features; no spectral clustering; sigmoid margin uncalibrated"},
+    "seasonal-naive": {"task":"forecast", "fit_splits":[], "family":"lag-24 repeat", "scale_splits":["train"]},
+    "hist-gradient-boosting": {"task":"forecast", "fit_splits":["train"], "family":"histogram gradient boosting point regression"},
+    "lasso-direct": {"task":"forecast", "fit_splits":["train"], "family":"24 direct regularized autoregressions", "source":"https://arxiv.org/abs/2005.04522", "adaptation":"point outputs; common 168 lags; no calendar or probabilistic simulator"},
+    "forecast-ensemble": {"task":"forecast", "fit_splits":["train"], "family":"seasonal-naive/HGB/Lasso fixed equal average", "source":"https://ascelibrary.org/doi/10.1061/JWRMD5.WRENG-6887", "adaptation":"reduced ensemble family; not competition solution reproduction"},
+    "shape-kmeans": {"task":"cluster", "fit_splits":[], "family":"Euclidean k-means; observation-only"},
+    "shape-dtw-average": {"task":"cluster", "fit_splits":[], "family":"DTW average linkage; observation-only"},
+    "shape-msm-medoids": {"task":"cluster", "fit_splits":[], "family":"univariate MSM exact k-medoids; observation-only", "source":"https://arxiv.org/abs/2205.15181", "adaptation":"exact enumeration of 220 medoid combinations instead of PAM heuristic"}
+  }
+}
