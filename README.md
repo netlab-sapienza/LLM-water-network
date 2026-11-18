@@ -85,6 +85,8 @@ These experiments use simulated networks and synthetic demand profiles; they do 
 
 ## Citation and reuse
 
+The proceedings will be published in the next weeks. If interested in a pre-print version of the article, please contact the authors.
+
 See [CITATION.cff](CITATION.cff) for the title and authors. Publication metadata can be completed when the venue and DOI are available.
 
 Third-party network terms are documented in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). A repository-wide software license has not yet been assigned by the authors.
